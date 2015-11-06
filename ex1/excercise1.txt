@@ -1,0 +1,6 @@
+LCHANGESINALLDISGRACESBECAUSEY
+
+I created a program in Python to work through all possible permutations of the
+26-letter alphabet until I found one that converted the ciphertext
+into recognisable English. I checked that the resulting extract
+occurred in tess26.txt
