@@ -1,0 +1,7 @@
+HENSHERECOGNIZEDTHEMMAKINGANIN
+
+I created a program that would read the cyphertext and put it into columns.
+I then read the columns row-wise to find the plain text. I didn't know the
+number of columns, so I simply repeated the process 4 times to find all the
+possibilities, only one was recognisably English and so I checked that the
+resulting extract occurred in tess26.txt.

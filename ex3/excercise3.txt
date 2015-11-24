@@ -1,0 +1,8 @@
+LYSTILLWELLITMAKESNODIFFERENCE
+
+I conducted frequency analysis of the cyphertext, to find the most frequently
+occuring characters in the positions which would be affected by the same letter
+of the unknown key, i.e. frequencies of characters at position n(m%6). This
+yielded a most likely key, which thankfully turned out to be correct. I then
+used the key to convert to plaintext as I did in exercise 2. I checked that the
+resulting extract occurred in tess26.txt.

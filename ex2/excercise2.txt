@@ -1,1 +1,6 @@
 SMOKINGHEHADANALMOSTSWARTHYCOM
+
+Since we were given the key I simply made a program in python which subtracted
+converted the characters to numbers, looped over the cipher text, subtracted
+the appropriate amount using the key, finally giving the plaintext. I checked 
+that the resulting extract occurred in tess26.txt

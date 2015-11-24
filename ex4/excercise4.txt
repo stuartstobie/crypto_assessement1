@@ -1,0 +1,93 @@
+FIELDROSETOTHEOCCASIONNOSAIDHE
+
+I conducted frequency analysis of the letters for all the possible key lengths.
+These results are in the comments of my python program. Sadly, this didn't
+reveal which was the most likely key length to me I then looked at the
+coincidences in the cyphertext (how many times the character is the same as
+the one several spaces back). It appeared that there were more coincidences
+every time I looked at a character a multiple of 8 behind. This led me to
+believe the key length was 8. Thankfully I that was correct.
+
+Using the frequency analysis I put in my most likely shift values:
+shift = {
+    0: 7,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 11,
+    6: 10,
+    7: 4
+}
+GIELDEKSFTOTHRKCDASIOAJOTAIDHROTPICALYUIXONTSRHLIISOLQXOEYWHEASEEURBEERIMLESWNO
+
+Not there, so I changed the 0 shift value to something equally likely:
+shift = {
+    0: 8,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 11,
+    6: 10,
+    7: 4
+}
+FIELDEKSETOTHRKCCASIOAJOSAIDHROTOICALYUIWONTSRHLHISOLQXODYWHEASEDURBEERILLESWNOK
+
+FIELD! I see field, very promising. I now change the 6 shift to it's next most
+likely candidate:
+shift = {
+    0: 8,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 11,
+    6: 20,
+    7: 4
+}
+FIELDEASETOTHRACCASIOAZOSAIDHRETOICALYKIWONTSRXLHISOLQNODYWHEAIEDURBEEHILLESWNEK
+
+Still not right, change the 6 shift again:
+shift = {
+    0: 8,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 11,
+    6: 2,
+    7: 4
+}
+FIELDESSETOTHRSCCASIOAROSAIDHRWTOICALYCIWONTSRPLHISOLQFODYWHEAAEDURBEEZILLESWNWK
+
+Still not right, change the 6 shift again:
+shift = {
+    0: 8,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 11,
+    6: 6,
+    7: 4
+}
+FIELDEOSETOTHROCCASIOANOSAIDHRSTOICALYYIWONTSRLLHISOLQBODYWHEAWEDURBEEVILLESWNSK
+
+Something else must need changed. However, field Rose might make sense. THR
+would become THE as well so this seems like a good bet. Even though I thought
+the shift at position 5 was very likely, I change it to the next most likely
+candidate:
+shift = {
+    0: 8,
+    1: 9,
+    2: 19,
+    3: 13,
+    4: 23,
+    5: 24,
+    6: 6,
+    7: 4
+}
+FIELDROSETOTHEOCCASIONNOSAIDHESTOICALLYIWONTSELLHISOLDBODYWHENWEDURBERVILLESWASK
+
+BINGO!

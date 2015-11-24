@@ -63,13 +63,9 @@ my_string = my_file.read()
 my_string = my_string[:len(my_string)-1]
 my_file.close()
 
-print(my_string)
-
 my_chars =[]
 for char in my_string:
     my_chars.append(alphabet[char])
-
-print(my_chars)
 
 key = 'TESSOFTHEDURBERVILLES'
 key_chars = []

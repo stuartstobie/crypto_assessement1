@@ -1,0 +1,9 @@
+CEWITHALECDURBERVILLEANDITSRES
+
+Firstly I created a program to read the cyphertext columwise, simlar to
+excercise 5. I then generated all the possible permutations of 0-6 using this
+site: http://textmechanic.com/Permutation-Generator.html
+I used these permutations to read the columns row-wise in all (720)possible
+orders. I searched the output for common English words and found a result which
+was recognisably english when colums were read in [1, 0, 4, 3, 2, 5] order. I
+checked that the resulting extract occurred in tess26.txt.
